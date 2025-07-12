@@ -1,0 +1,33 @@
+.hero {
+  height: 90vh;
+  background: linear-gradient(135deg, #4ba3c7, #1d3557);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 1.5s ease-out;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.hero-btn {
+  background-color: #f8f9fa;
+  color: #1d3557;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.hero-btn:hover {
+  background-color: #dce3ea;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
