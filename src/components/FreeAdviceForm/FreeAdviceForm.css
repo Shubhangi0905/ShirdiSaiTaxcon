@@ -1,0 +1,5 @@
+/* src/components/FreeAdviceForm/FreeAdviceForm.css */
+.form-container {
+  display: flex;
+  flex-direction: column;
+}

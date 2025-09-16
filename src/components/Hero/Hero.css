@@ -1,0 +1,94 @@
+/* src/components/Hero/Hero.css */
+.hero {
+  position: relative;
+  height: 80vh;
+  background: url('/hero-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 51, 102, 0.7) 0%,
+    rgba(0, 51, 102, 0.3) 50%,
+    rgba(0, 51, 102, 0.1) 80%,
+    transparent 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  padding: 0 20px;
+  margin-top: 100px; /* Adjust this value as needed */
+}
+
+.hero-headline {
+  font-weight: 700 !important;
+  font-size: 3rem !important;
+  margin-bottom: 20px !important;
+}
+
+.hero-subheadline {
+  font-weight: 300 !important;
+  font-size: 1.25rem !important;
+  margin-bottom: 30px !important;
+}
+
+.hero-cta-button {
+  background-color: #ffd700 !important;
+  color: #003366 !important;
+  padding: 15px 40px !important;
+  border-radius: 50px !important;
+  font-weight: bold !important;
+  transition: transform 0.3s ease !important;
+  margin-bottom: 20px;
+}
+
+.hero-cta-button:hover {
+  transform: translateY(-2px);
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.social-media a {
+  /* This is now less specific to allow the SVG rule to work */
+  color: #ffd700;
+  font-size: 40px; 
+}
+
+/* This is the key fix to target the SVG element directly */
+.social-media a svg {
+  color: #003366 !important;
+  font-size: 40px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover svg {
+  color: #ffd700 !important;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .hero-headline {
+    font-size: 2rem !important;
+  }
+  .hero-subheadline {
+    font-size: 1rem !important;
+  }
+}

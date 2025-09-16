@@ -1,0 +1,16 @@
+/* src/App.css */
+h1, h2, h3, h4, h5, h6 {
+  color: #003366;
+}
+
+.section-padding {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 40px 15px;
+  }
+}

@@ -1,0 +1,87 @@
+/* src/components/Clients/Clients.css */
+
+.clients-container {
+  text-align: center;
+}
+
+.clients-content {
+  margin-top: 40px;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 700 !important;
+  margin-bottom: 40px !important;
+}
+
+.subtitle {
+  color: #00509e !important;
+  font-weight: 600 !important;
+  margin-bottom: 25px !important;
+}
+
+.college-slider-wrapper {
+  max-width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.college-card-clean {
+  height: auto;
+  min-height: 150px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: transparent !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  transition: transform 0.3s ease;
+  margin: 0 10px;
+  padding: 15px !important;
+  text-align: left;
+}
+
+.college-card-clean:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+.college-district-name-clean {
+  color: #003366 !important;
+  font-weight: 600 !important;
+  text-align: left;
+  padding: 0 !important;
+  margin-bottom: 8px !important;
+  font-size: 1.1rem !important;
+}
+
+.college-card-clean .MuiList-root {
+  padding: 0 !important;
+  text-align: left;
+}
+
+.college-card-clean .MuiListItem-root {
+  padding: 1px 0 !important;
+}
+
+.college-card-clean .college-list-item-text-clean .MuiTypography-root {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Remove all testimonial-related CSS rules below */
+
+/* Example of removed code:
+.testimonial-slider-wrapper { ... }
+.testimonial-card { ... }
+.testimonial-quote { ... }
+... and all other testimonial-related classes
+*/
+
+@media (max-width: 768px) {
+  .clients-content {
+    flex-direction: column;
+  }
+}

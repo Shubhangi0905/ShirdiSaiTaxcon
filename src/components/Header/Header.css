@@ -1,0 +1,106 @@
+/* src/components/Header/Header.css */
+
+.header {
+  background-color: #f1f1e7 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 64px;
+}
+
+.left-side-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* This is the key change to push content to the left */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.logo-img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.company-name {
+  color: #003366 !important;
+  font-weight: 700 !important;
+  font-size: 1.25rem !important;
+  white-space: nowrap;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-left: 20px; /* Add margin to separate from company name */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #003366;
+}
+
+.cta-button {
+  background-color: #003366 !important;
+  color: #ffffff !important;
+  border-radius: 50px !important;
+  padding: 8px 24px !important;
+  font-weight: bold !important;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.cta-button:hover {
+  background-color: #00509e !important;
+}
+
+@media (max-width: 960px) {
+  .header-toolbar {
+    padding: 0 15px;
+  }
+  .left-side-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-nav {
+    flex-grow: 1;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .company-name {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav, .cta-button {
+    display: none;
+  }
+  .header-toolbar {
+    justify-content: center;
+    min-height: 56px;
+  }
+  .logo-container {
+    margin-right: 0;
+  }
+}

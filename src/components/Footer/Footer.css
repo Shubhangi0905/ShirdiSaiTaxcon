@@ -1,0 +1,38 @@
+/* src/components/Footer/Footer.css */
+
+.footer {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-mediaa {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.social-mediaa a:hover {
+  color: #fff;
+}
+.social-mediaa a svg {
+  color: #fff !important;
+  font-size: 40px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.copyright {
+  margin-bottom: 5px;
+}
+
+.design-credit {
+  font-size: 14px;
+  color: #ccc;
+}

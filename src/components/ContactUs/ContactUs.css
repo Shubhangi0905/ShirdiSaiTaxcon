@@ -1,0 +1,82 @@
+/* src/components/Contact/Contact.css */
+
+.contact-container {
+  text-align: center;
+  max-width: 1000px; /* Optional: Constrain overall width */
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 700 !important;
+  margin-bottom: 40px !important;
+  color: #003366 !important; /* Ensure title color is consistent */
+}
+
+/* New wrapper for the contact details and map with a background color */
+.contact-details-and-map-wrapper {
+  margin-top: 40px;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  text-align: left; /* Align text within this wrapper to the left */
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.contact-info-item .contact-icon {
+  color: #003366;
+  margin-right: 15px;
+  font-size: 28px;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.contact-info-text {
+  flex-grow: 1; /* Allow text to take available space */
+}
+
+.info-title {
+  font-weight: 500 !important;
+  color: #003366 !important;
+  margin-bottom: 5px !important;
+}
+
+.contact-info-item .MuiTypography-body1,
+.contact-info-item .MuiTypography-body2 {
+  color: #333; /* Darker text for readability */
+}
+
+.contact-map {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 0; /* Align with details above */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .contact-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-details-and-map-wrapper {
+    padding: 20px !important;
+  }
+  .contact-info-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-info-item .contact-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .info-title {
+    margin-bottom: 0 !important;
+  }
+}
